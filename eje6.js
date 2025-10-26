@@ -12,6 +12,7 @@ while (true){
         console.log("Número inválido. Intente de nuevo.");
         continue;
     }
+    console.log("Números primos entre 1 y " + numero + ":");
     for (let n = 2; n <= numero; n++) {
         let esprimo = true;
         for (let i = 2; i <=  Math.sqrt(n); i++) {

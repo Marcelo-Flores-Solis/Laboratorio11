@@ -1,6 +1,6 @@
 let total = 0;
 let continuar;
-
+console.log("Bienvenido al sistema de compras.");
 while (true) {
     let precio = parseFloat(prompt("Ingrese el precio del producto (o -1 para terminar):"));
 
@@ -13,8 +13,11 @@ while (true) {
         console.log("Precio inválido. Intente nuevamente.");
         continue;
     }
+    console.log("Precio ingresado: $" + precio.toFixed(2));
 
     total += precio;
+    
+    console.log("Producto agregado. Total actual: $" + total.toFixed(2));
 
     continuar = prompt("¿Desea agregar otro producto? (S/N):");
     if (continuar.toUpperCase() !== "S") {
@@ -22,11 +25,9 @@ while (true) {
     }
 }
 
-
 console.log("Total parcial a pagar: $" + total.toFixed(2));
 
 let totalFinal = total;
-
 
 if (total > 100) {
     console.log("Tiene un descuento del 10%.");

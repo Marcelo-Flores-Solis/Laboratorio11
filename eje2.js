@@ -1,6 +1,7 @@
 let edad;
 
 edad = parseInt(prompt("Ingrese su edad:"));
+console.log("Edad ingresada: " + edad);
 
 if ( edad >= 60) {
     console.log("Usted es un adulto mayor.");

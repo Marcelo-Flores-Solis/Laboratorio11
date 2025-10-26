@@ -21,17 +21,20 @@ while (true) {
                 console.log("Radio inválido. Intente de nuevo.");
                 break;
             }
+            console.log("Radio ingresado: " + radio);
             const areaCirculo = Math.PI * radio * radio;
             console.log("El área del círculo es: " + areaCirculo.toFixed(2));
             break;
 
         case 2:
             let base = parseFloat(prompt("Ingrese la base del rectángulo:"));
+            
             let altura = parseFloat(prompt("Ingrese la altura del rectángulo:"));
             if (isNaN(base) || isNaN(altura) || base <= 0 || altura <= 0) {
                 console.log("Valores inválidos. Intente de nuevo.");
                 break;
             }
+            console.log("Base ingresada: " + base + ", Altura ingresada: " + altura);
             const areaRect = base * altura;
             console.log("El área del rectángulo es: " + areaRect.toFixed(2));
             break;

@@ -17,13 +17,11 @@ while (true) {
     let suma = 0;
     let contador = 0;
 
-
     let temp = numero;
     while (temp > 0) {
         temp = Math.floor(temp / 10);
         contador++;
     }
-
 
     temp = numero;
     while (temp > 0) {
@@ -37,5 +35,4 @@ while (true) {
     } else {
         console.log(numero + " no es un número Armstrong.");
     }
-
 }

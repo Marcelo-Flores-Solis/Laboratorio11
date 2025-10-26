@@ -1,8 +1,8 @@
 let dinero;
-
 while (true) {
     dinero = parseFloat(prompt("Ingrese la cantidad de dinero que tiene (-1 para terminar):"));
-     
+    let dinerofinal = dinero;
+
     if (dinero === -1) {
         console.log("Programa terminado.");
         break;
@@ -11,8 +11,6 @@ while (true) {
         console.log("Cantidad inválida. Intente de nuevo.");
         continue;
     }
-    
-
     billetes100 = Math.floor(dinero / 100);
     dinero %= 100;
     billetes50 = Math.floor(dinero / 50);
@@ -28,7 +26,7 @@ while (true) {
     dinero %= 2;
     monedas1 = dinero;
 
-    console.log("El dinero");
+    console.log("El dinero es de "+ dinerofinal +" :" );
     console.log("Billetes de 100: " + billetes100);
     console.log("Billetes de 50: " + billetes50);
     console.log("Billetes de 20: " + billetes20);

@@ -19,7 +19,7 @@ while (true) {
         console.log("No puede agregar este producto, supera su presupuesto.");
         break;
     }
-
+    console.log("Precio ingresado: $" + precio.toFixed(2));
     total += precio;
     console.log("Producto agregado. Total actual: $" + total.toFixed(2));
 

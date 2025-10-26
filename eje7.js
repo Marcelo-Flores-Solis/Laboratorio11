@@ -1,4 +1,5 @@
 let numero;
+console.log("Suma de números desde 1 hasta N excluyendo múltiplos de 5");
 
 while (true){
     numero = parseInt(prompt("Ingrese un número para sumarlo hasta ese mismo (-1 para terminar):"));
@@ -17,4 +18,5 @@ while (true){
         }
     }
     console.log("La suma de los números desde 1 hasta " + numero + " es: " + suma);
+    
 }

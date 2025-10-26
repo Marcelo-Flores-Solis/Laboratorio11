@@ -17,6 +17,7 @@ while (true) {
 
     switch (opcion) {
         case 1:
+            console.log("Cálculo de estadísticas de N notas:");
             let cantidad = parseInt(prompt("¿Cuántas notas desea ingresar?:"));
             if (isNaN(cantidad) || cantidad <= 0) {
                 console.log("Cantidad inválida. Intente de nuevo.");
@@ -37,6 +38,7 @@ while (true) {
                     i--;
                     continue;
                 }
+                console.log("Nota ingresada: " + nota);
                 suma += nota;
                 if (nota > max) max = nota;
                 if (nota < min) min = nota;
@@ -54,6 +56,7 @@ while (true) {
                     i--;
                     continue;
                 }
+                console.log("Nota ingresada para comparación: " + nota);
                 if (nota > promedio) encimaPromedio++;
             }
 
@@ -63,11 +66,12 @@ while (true) {
             console.log("Cantidad de pares: " + pares);
             console.log("Cantidad de impares: " + impares);
             console.log("Cantidad por encima del promedio: " + encimaPromedio);
-            
+            console.log("-------------------------------");
             break;
 
     
         case 2:
+            console.log("Contador de números pares e impares en un rango:");
             let inicio = parseInt(prompt("Ingrese el inicio del rango:"));
             let fin = parseInt(prompt("Ingrese el final del rango:"));
             if (isNaN(inicio) || isNaN(fin) || inicio > fin) {
@@ -86,10 +90,11 @@ while (true) {
             console.log("Entre " + inicio + " y " + fin + ":");
             console.log("Pares: " + paresR);
             console.log("Impares: " + imparesR);
-        
+            console.log("-------------------------------");
             break;
 
         case 3:
+            console.log("Generador de tabla de multiplicar:");
             let numero = parseInt(prompt("Ingrese el número para generar su tabla de multiplicar:"));
             if (isNaN(numero)) {
                 console.log("Número inválido.");
@@ -100,7 +105,7 @@ while (true) {
             for (let i = 1; i <= 12; i++) {
                 console.log(numero + " x " + i + " = " + (numero * i));
             }
-            
+            console.log("-------------------------------");
             break;
 
        
