@@ -12,7 +12,9 @@ while (true){
         continue;
     }
     for (let i = 1; i <= numero; i++) {
-        suma += i;
+        if (i % 5 !== 0) {
+            suma += i;
+        }
     }
     console.log("La suma de los números desde 1 hasta " + numero + " es: " + suma);
 }
